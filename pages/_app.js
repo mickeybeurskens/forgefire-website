@@ -1,7 +1,11 @@
-import '../styles/globals.css'
+import Header from '../components/header'
+import '../styles/global.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const App = ({Component, pageProps}) => {
+  return <>
+    <Header/>
+    <Component {...pageProps} />
+  </>
 }
 
-export default MyApp
+export default App
