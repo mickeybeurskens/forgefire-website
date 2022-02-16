@@ -1,6 +1,6 @@
 ---
-title: Test Title
-author: Me
+title: This Is Django
+author: Mickey Beurskens
 date: "2022-02-16"
 ---
 
