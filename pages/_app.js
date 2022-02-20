@@ -1,5 +1,6 @@
 import Header from '../components/Header'
 import '../styles/global.scss'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const App = ({Component, pageProps}) => {
   return <>
