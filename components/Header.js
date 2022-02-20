@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { Container } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
 
 const Header = () => {
   const headerPageNames = [
@@ -11,21 +13,20 @@ const Header = () => {
 
   const currentPath = useRouter().pathname
   return (
+    <Navbar bg="dark" variant="dark">
     <Container>
-        <header className='d-flex justify-content-center py-3'>
-        <ul className="nav nav-pills">
-        {headerPageNames.map((pageInfo, index) => (
-          <li key={index} className='nav-item'>
-            <Link href={pageInfo.link}>
-              <a className={'nav-link ' + (pageInfo.link===currentPath ? 'active' : '')}>
-                {pageInfo.name}
-              </a>
-            </Link>
-          </li>
-        ))}
-      </ul>
-      </header>
+    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+    <Nav className="me-auto">
+      {headerPageNames.map((pageInfo, index) => (
+        <Link key={index} href={pageInfo.link}>
+          <a className={'nav-link ' + (pageInfo.link===currentPath ? 'active' : '')}>
+            {pageInfo.name}
+          </a>
+        </Link>
+      ))}
+    </Nav>
     </Container>
+    </Navbar>
   )
 }
 
