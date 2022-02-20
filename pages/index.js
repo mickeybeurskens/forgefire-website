@@ -1,11 +1,12 @@
 import React from 'react'
 import loadBlogs from '../utils/blog'
+import styles from '../styles/Home.module.scss'
 
 const Home = (props) => {
   console.log('home', props)
   return (
     <div>
-      <p>Hello Blog Home</p>
+      <p className={styles.red_text}>Hello Blog Home</p>
       <div className='posts'>
         {props.blogs.map((blog, index) => (
           <h3 key={index}>{blog.front_matter.title}</h3>
