@@ -1,7 +1,7 @@
 ---
-title: Why Nextjs Is Cool
+title: Words on CSS 
 author: Mickey Beurskens
-date: "2022-02-14"
+date: "2021-12-01"
 ---
 
 # Inquit et petit paventque et omnia
