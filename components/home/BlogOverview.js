@@ -12,19 +12,20 @@ const blogsSortByDate = (blog_first, blog_second) => (
 )
 
 const BlogCard = ({blog}) => {
-  console.log('card', blog)
   return (
-    <Card style={{ width: '18rem' }}>
-    <Image src="/logo_forge_fire.svg" alt="blog image" height="200" width="200"/>  
+    <Card>
+    <Card.Img src="/logo_forge_fire.svg" alt="blog image" height="200" width="200"/>  
     <Card.Body>
       <Card.Title>{blog.front_matter.title}</Card.Title>
       <Card.Text>
         Some quick example text to build on the card title and make up the bulk of
         the card&apos;s content.
       </Card.Text>
-      <Button variant="primary">Read</Button>
     </Card.Body>
-  </Card>
+    <Card.Footer>
+      <Button variant="primary">Read</Button>
+    </Card.Footer>
+    </Card>
   )
 }
 
@@ -34,7 +35,7 @@ const BlogOverview = ({blogs}) => {
   const sortedBlogs = publishedBlogs.sort(blogsSortByDate).slice(0, numberOfBlogs)
   return (
     <div>
-      <CardGroup>
+      <CardGroup className="p-4">
         {sortedBlogs.map((blog, index) => (
           <BlogCard key={index} blog={blog}/>          
         ))}

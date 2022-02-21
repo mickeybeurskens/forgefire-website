@@ -4,7 +4,6 @@ import Hero from '../components/home/Hero'
 import BlogOverview from '../components/home/BlogOverview'
 
 const Home = (props) => {
-  console.log('prop', props.blogs)
   return (
     // <div>
     //   <p>Hello Blog Home</p>
