@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 
 const loadBlogs = () => {
   const fileNames = fs.readdirSync(path.join('blogs'))
-  const blogs = fileNames.map(filename => {
+  return fileNames.map(filename => {
     const slug = filename.replace('.md', '')
     const content = fs.readFileSync(path.join('blogs', filename),
       'utf-8')
@@ -14,7 +14,6 @@ const loadBlogs = () => {
       front_matter
     }
   })
-  return blogs
 }
 
 export default loadBlogs
