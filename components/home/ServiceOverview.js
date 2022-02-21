@@ -29,7 +29,7 @@ const IconGrid = () => {
 const ServiceOverview = () => {
   return (
     <Container>
-      <h2 className="pb-2 border-bottom">Icon grid</h2>
+      <h2 className="pb-2 border-bottom">Consultancy And Education</h2>
       <IconGrid/>
     </Container>
   )

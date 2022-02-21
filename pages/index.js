@@ -3,21 +3,15 @@ import loadBlogs from '../utils/blog'
 import Hero from '../components/home/Hero'
 import BlogOverview from '../components/home/BlogOverview'
 import ServiceOverview from '../components/home/ServiceOverview'
+import Testimonials from '../components/home/Testimonials'
 
 const Home = (props) => {
   return (
-    // <div>
-    //   <p>Hello Blog Home</p>
-    //   <div className='posts'>
-    //     {props.blogs.map((blog, index) => (
-    //       <h3 key={index}>{blog.front_matter.title}</h3>
-    //     ))}
-    //   </div>
-    // </div>
     <main>
       <Hero/>
       <BlogOverview blogs={props.blogs}/>
       <ServiceOverview/>
+      <Testimonials/>
     </main>
   )
   }
