@@ -2,6 +2,7 @@ import React from 'react'
 import loadBlogs from '../utils/blog'
 import Hero from '../components/home/Hero'
 import BlogOverview from '../components/home/BlogOverview'
+import ServiceOverview from '../components/home/ServiceOverview'
 
 const Home = (props) => {
   return (
@@ -16,6 +17,7 @@ const Home = (props) => {
     <main>
       <Hero/>
       <BlogOverview blogs={props.blogs}/>
+      <ServiceOverview/>
     </main>
   )
   }
