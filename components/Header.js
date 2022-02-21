@@ -30,7 +30,7 @@ const Header = () => {
       ))}
     </Nav>
     </Container>
-    </Navbar>
+    </Navbar> 
   )
 }
 
