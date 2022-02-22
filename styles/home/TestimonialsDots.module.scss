@@ -1,8 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import '../default_style';
 
 .slider {
-  height: 100%;
+  background-color: $main_3;
+  height: 20em;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -57,7 +59,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 400%;
+  width: 300%;
   height: 100%;
   -webkit-transition: left 0.4s;
   transition: left 0.4s;
