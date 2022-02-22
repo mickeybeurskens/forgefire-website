@@ -33,7 +33,7 @@ const TestimonialCarousel = () => {
            <Carousel.Caption>
              <h5>{info.name}</h5>
            </Carousel.Caption>
-           <Image className="d-block" src={info.img_path} alt="photo" 
+           <Image className="mx-auto" src={info.img_path} alt="photo" 
             width="60px" height="60px"/>
          </Carousel.Item>
         ))}

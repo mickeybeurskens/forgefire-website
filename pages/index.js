@@ -3,7 +3,7 @@ import loadBlogs from '../utils/blog'
 import Hero from '../components/home/Hero'
 import BlogOverview from '../components/home/BlogOverview'
 import ServiceOverview from '../components/home/ServiceOverview'
-import Testimonials from '../components/home/Testimonials'
+import TestimonialsDots from '../components/home/TestimonialsDots'
 
 const Home = (props) => {
   return (
@@ -11,7 +11,7 @@ const Home = (props) => {
       <Hero/>
       <BlogOverview blogs={props.blogs}/>
       <ServiceOverview/>
-      <Testimonials/>
+      <TestimonialsDots/>
     </main>
   )
   }
