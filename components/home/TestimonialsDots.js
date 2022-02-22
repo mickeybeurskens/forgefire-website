@@ -1,6 +1,3 @@
-import Container from "react-bootstrap/Container"
-import Carousel from "react-bootstrap/Carousel"
-import Image from "next/image"
 import styles from "../../styles/home/TestimonialsDots.module.scss"
 
 
@@ -43,7 +40,7 @@ const TestimonialsDots = () => {
           title={'slide' + String(index)} defaultChecked={index===0?true:false} 
           className={styles.slider__nav}/>
       ))}
-      <div className={styles.slider__inner}>
+      <div className={styles.slider__inner} style={{width: testimonials.length + '00%'}}>
         {testimonials.map((info, index) => (
           <Slide key={index}/>
         ))}
