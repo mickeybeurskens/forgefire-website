@@ -10,6 +10,7 @@ const Header = () => {
     {name: 'Home', link: '/'},
     {name: 'Blogs', link: '/blogs'},
     {name: 'Consultancy', link: '/consultancy'},
+    {name: 'Contact', link: '/contact'}
   ]
 
   const currentPath = useRouter().pathname
