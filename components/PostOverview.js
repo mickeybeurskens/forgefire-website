@@ -7,10 +7,6 @@ const blogsPublished = (blog) => (
   new Date() - new Date(blog.date) > 0
 )
 
-const blogsSortByDate = (blog_first, blog_second) => (
-  new Date(blog_second.date) - new Date(blog_first.date)
-)
-
 const BlogCard = ({blog}) => {
   return (
     <Card>
@@ -29,10 +25,15 @@ const BlogCard = ({blog}) => {
   )
 }
 
-const BlogOverview = ({posts}) => {
-  const numberOfBlogs = 3
+const BlogOverview = ({posts, numberOfBlogs}) => {
   const publishedBlogs = posts.filter(blogsPublished)
-  const sortedBlogs = publishedBlogs.sort(blogsSortByDate).slice(0, numberOfBlogs)
+  console.log(publishedBlogs)
+  let sortedBlogs = []
+  if (numberOfBlogs > 0) { 
+    sortedBlogs = publishedBlogs.slice(0, numberOfBlogs)
+  } else {
+    sortedBlogs = publishedBlogs
+  }
   return (
     <div>
       <CardGroup className="p-4">
