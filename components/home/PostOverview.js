@@ -29,9 +29,10 @@ const BlogCard = ({blog}) => {
   )
 }
 
-const BlogOverview = ({blogs}) => {
+const BlogOverview = ({posts}) => {
+  console.log(posts)
   const numberOfBlogs = 3
-  const publishedBlogs = blogs.filter(blogsPublished)
+  const publishedBlogs = posts.filter(blogsPublished)
   const sortedBlogs = publishedBlogs.sort(blogsSortByDate).slice(0, numberOfBlogs)
   return (
     <div>

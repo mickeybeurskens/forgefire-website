@@ -1,27 +1,40 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import { getAllPosts } from '../../lib/post'
 
-const Blog = () => {
+const Post = ({post}) => {
   const router = useRouter()
   const { id } = router.query
 
   return (
     <>
-      <h1>Post: {id}</h1>
-      <ul>
-        <li>
-          <Link href="/post/[id]/[comment]" as={`/post/${id}/first-comment`}>
-            <a>First comment</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/post/[id]/[comment]" as={`/post/${id}/second-comment`}>
-            <a>Second comment</a>
-          </Link>
-        </li>
-      </ul>
+
     </>
   )
 }
 
-export default Blog
+const getStaticProps = async (context) => {
+  return {
+    props: {
+
+    }
+  }
+}
+
+const getStaticPaths = async () => {
+  const posts = getAllPosts(['slug'])
+
+  return {
+    paths: posts.map((post) => {
+      return {
+        params: {
+          slug: post.slug,
+        },
+      }
+    }),
+    fallback: false,
+  }
+}
+
+export default Post
+export {getStaticProps, getStaticPaths}
