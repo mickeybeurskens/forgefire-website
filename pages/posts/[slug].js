@@ -1,22 +1,33 @@
+import React from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import { getAllPosts } from '../../lib/post'
+import { getAllPosts, getPostBySlug } from '../../lib/post'
+import ReactMarkdown from 'react-markdown'
 
 const Post = ({post}) => {
   const router = useRouter()
   const { id } = router.query
-
   return (
     <>
-
+      <p>{post.author} </p>
+      <ReactMarkdown>{post.content}</ReactMarkdown>
     </>
   )
 }
 
-const getStaticProps = async (context) => {
-  return {
+const getStaticProps = async ({ params }) => {
+  const post = getPostBySlug(params.slug, [
+    'title',
+    'date',
+    'slug',
+    'author',
+    'content',
+    'ogImage',
+    'coverImage'
+  ])
+return {
     props: {
-
+      post: post
     }
   }
 }
