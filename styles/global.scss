@@ -1,0 +1,10 @@
+@import 'default_style';
+
+h1 {
+  font-family: $font_header;
+}
+
+p {
+  font-family: $font_body;
+  font-weight: $font_body_weight;
+}

@@ -12,7 +12,7 @@ const BlogCard = ({blog}) => {
     <Card>
     <Card.Img src="/logo_forge_fire.svg" alt="blog image" height="200" width="200"/>  
     <Card.Body>
-      <Card.Title>{blog.title}</Card.Title>
+      <Card.Title><h4>{blog.title}</h4></Card.Title>
       <Card.Text>
         Some quick example text to build on the card title and make up the bulk of
         the card&apos;s content.
@@ -27,7 +27,6 @@ const BlogCard = ({blog}) => {
 
 const BlogOverview = ({posts, numberOfBlogs}) => {
   const publishedBlogs = posts.filter(blogsPublished)
-  console.log(publishedBlogs)
   let sortedBlogs = []
   if (numberOfBlogs > 0) { 
     sortedBlogs = publishedBlogs.slice(0, numberOfBlogs)
