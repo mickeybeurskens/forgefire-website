@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar'
 const MenuItems = () => {
   const footerPageNames = [
     {name: 'Home', link: '/'},
-    {name: 'Blogs', link: '/blogs'},
+    {name: 'Blog', link: '/posts'},
     {name: 'Consultancy', link: '/consultancy'},
   ]
   

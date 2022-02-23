@@ -8,7 +8,7 @@ import Nav from 'react-bootstrap/Nav'
 const Header = () => {
   const headerPageNames = [
     {name: 'Home', link: '/'},
-    {name: 'Blogs', link: '/blogs'},
+    {name: 'Blog', link: '/posts'},
     {name: 'Consultancy', link: '/consultancy'},
     {name: 'Contact', link: '/contact'}
   ]

@@ -1,5 +1,5 @@
 import React from 'react'
-import loadBlogs from '../utils/blog'
+import loadPosts from '../lib/post'
 import Hero from '../components/home/Hero'
 import BlogOverview from '../components/home/BlogOverview'
 import ServiceOverview from '../components/home/ServiceOverview'
@@ -19,7 +19,7 @@ const Home = (props) => {
 const getStaticProps = async () => {
   return {
     props: {
-      blogs: loadBlogs()
+      blogs: loadPosts()
     },
   }
 }
