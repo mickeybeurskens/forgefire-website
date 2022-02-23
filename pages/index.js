@@ -17,10 +17,10 @@ const Home = (props) => {
   }
 
 const getStaticProps = async () => {
-  const posts = getAllPosts(['slug'])
+  const posts = getAllPosts(['slug', 'date', 'title'])
   return {
     props: {
-      posts: []
+      posts: posts
     },
   }
 }
