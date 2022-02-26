@@ -8,3 +8,9 @@ p {
   font-family: $font_body;
   font-weight: $font_body_weight;
 }
+
+a {
+
+  font-family: $font_body;
+  font-weight: $font_body_weight + 100;
+}
