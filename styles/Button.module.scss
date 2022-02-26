@@ -5,6 +5,20 @@
   border-color: $c-spanish-orange;
 }
 
-.secondary {
+.primary:hover {
   background-color: $c-white;
+  border-color: $c-spanish-orange;
+  color: $c-spanish-orange;
+}
+
+.secondary {
+  color: $c-gray-web;
+  background-color: $c-white;
+  border-color: $c-gray-web;
+}
+
+.secondary:hover {
+  color: $c-white;
+  background-color: $c-gray-web;
+  border-color: $c-white;
 }

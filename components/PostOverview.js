@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
+import { PrimaryButton } from "./Button"
 
 const blogsPublished = (blog) => (
   new Date() - new Date(blog.date) > 0
@@ -21,7 +22,7 @@ const PostCard = ({blog}) => {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <Button variant="primary">Read</Button>
+      <PrimaryButton text={"Read"}/>
     </Card.Footer>
     </Card>
     </Col>
