@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import { PrimaryButton } from "./Button"
+import styles from '../styles/PostOverview.module.scss'
 
 const blogsPublished = (blog) => (
   new Date() - new Date(blog.date) > 0
@@ -22,7 +23,7 @@ const PostCard = ({blog}) => {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <PrimaryButton text={"Read"}/>
+      <PrimaryButton className={styles.button} text={"Read"}/>
     </Card.Footer>
     </Card>
     </Col>

@@ -18,7 +18,7 @@ const IconItem = () => {
 const IconGrid = () => {
   const testarray = [1, 2, 3, 4, 5, 6]
   return (
-    <Row className="row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+    <Row className="row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
       {testarray.map((elem, index) => (
         <IconItem key={index}/>
       ))}
