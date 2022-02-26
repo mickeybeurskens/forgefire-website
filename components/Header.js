@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
+import styles from '../styles/Header.module.scss'
 
 const Header = () => {
   const headerPageNames = [
@@ -15,7 +16,7 @@ const Header = () => {
 
   const currentPath = useRouter().pathname
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar className={styles.navigation} variant="dark">
     <Container>
     <Navbar.Brand href="/">
       <Image src='/logo_forge_fire.png' alt='forge fire logo'

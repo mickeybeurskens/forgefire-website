@@ -1,14 +1,16 @@
 import Image from "next/image"
 import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
-import CardGroup from "react-bootstrap/CardGroup"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 
 const blogsPublished = (blog) => (
   new Date() - new Date(blog.date) > 0
 )
 
-const BlogCard = ({blog}) => {
+const PostCard = ({blog}) => {
   return (
+    <Col>
     <Card>
     <Card.Img src="/logo_forge_fire.svg" alt="blog image" height="200" width="200"/>  
     <Card.Body>
@@ -22,10 +24,11 @@ const BlogCard = ({blog}) => {
       <Button variant="primary">Read</Button>
     </Card.Footer>
     </Card>
+    </Col>
   )
 }
 
-const BlogOverview = ({posts, numberOfBlogs}) => {
+const PostOverview = ({posts, numberOfBlogs}) => {
   const publishedBlogs = posts.filter(blogsPublished)
   let sortedBlogs = []
   if (numberOfBlogs > 0) { 
@@ -35,13 +38,13 @@ const BlogOverview = ({posts, numberOfBlogs}) => {
   }
   return (
     <div>
-      <CardGroup className="p-4">
+    <Row className="mb-5 p-4 g-3">
         {sortedBlogs.map((blog, index) => (
-          <BlogCard key={index} blog={blog}/>          
+          <PostCard key={index} blog={blog}/>          
         ))}
-      </CardGroup>
+      </Row>
     </div>
   )
 }
 
-export default BlogOverview
+export default PostOverview

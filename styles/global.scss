@@ -1,7 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import 'default_style';
 
 h1 {
   font-family: $font_header;
+  font-weight: $font_weight_h1;
+}
+
+h2 {
+  font-family: $font_header;
+  font-weight: $font_weight_h2;
+}
+
+h3 {
+  font-family: $font_header;
+  font-weight: $font_weight_h3;
+}
+
+h4 {
+  font-family: $font_header;
+  font-weight: $font_weight_h4;
+}
+
+h5 {
+  font-family: $font_header;
+  font-weight: $font_weight_h5;
+}
+
+h6 {
+  font-family: $font_header;
+  font-weight: $font_weight_h6;
 }
 
 p {
@@ -12,5 +40,10 @@ p {
 a {
 
   font-family: $font_body;
-  font-weight: $font_body_weight + 100;
+  font-weight: $font_body_weight + 300;
+}
+
+body {
+  background-color: $light_2;
+  color: $dark_2;
 }
