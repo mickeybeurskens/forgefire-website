@@ -10,7 +10,7 @@
 /* SCSS HEX */
 $c-rufous: #ac1d00ff;
 $c-spanish-orange: #e26200ff;
-$c-yellow-orange-color-wheel: #fc9600ff;
+$c-yellow-orange: #fc9600ff;
 $c-smoky-black: #0f0f0fff;
 $c-raisin-black: #20202fff;
 $c-gray-web: #7d7d7dff;
@@ -38,3 +38,11 @@ $font_weight_h6: 400;
 
 $font_body: 'Titillium Web', 'sans-serif';
 $font_body_weight: 300;
+
+/* Standard Style Variables */
+$c-main-1: $c-white;
+$c-main-2: $c-cultured;
+$c-accent-1: $c-spanish-orange;
+$c-accent-2: $c-yellow-orange;
+$c-text-1: $c-raisin-black;
+$c-text-2: $c-cultured;

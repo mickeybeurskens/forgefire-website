@@ -16,7 +16,7 @@ const Header = () => {
 
   const currentPath = useRouter().pathname
   return (
-    <Navbar className={styles.navigation} variant="dark">
+    <Navbar className={styles.navigation} variant="light">
     <Container>
     <Navbar.Brand href="/">
       <Image src='/logo_forge_fire.png' alt='forge fire logo'
@@ -25,7 +25,7 @@ const Header = () => {
     <Nav className="me-auto">
       {headerPageNames.map((pageInfo, index) => (
         <Link key={index} href={pageInfo.link}>
-          <a className={'nav-link ' + (pageInfo.link===currentPath ? 'active' : '')}>
+          <a className={styles.text + ' nav-link ' + (pageInfo.link===currentPath ? 'active' : '')}>
             {pageInfo.name}
           </a>
         </Link>
