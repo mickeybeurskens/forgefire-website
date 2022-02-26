@@ -1,11 +1,32 @@
-$accent_1: #ac1d00;
-$accent_2: #e26200;
-$accent_3: #fc9600;
-$dark_1: #0f0f0f;
-$dark_2: #20202f;
-$dark_3: #7d7d7d;
-$light_1: #ececec;
-$light_2: #ffffff;
+// $accent_1: #ac1d00;
+// $accent_2: #e26200;
+// $accent_3: #fc9600;
+// $dark_1: #0f0f0f;
+// $dark_2: #20202f;
+// $dark_3: #7d7d7d;
+// $light_1: #ececec;
+// $light_2: #ffffff;
+
+/* SCSS HEX */
+$c-rufous: #ac1d00ff;
+$c-spanish-orange: #e26200ff;
+$c-yellow-orange-color-wheel: #fc9600ff;
+$c-smoky-black: #0f0f0fff;
+$c-raisin-black: #20202fff;
+$c-gray-web: #7d7d7dff;
+$c-cultured: #ecececff;
+$c-white: #ffffffff;
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #ac1d00ff, #e26200ff, #fc9600ff, #0f0f0fff, #20202fff, #7d7d7dff, #ecececff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #ac1d00ff, #e26200ff, #fc9600ff, #0f0f0fff, #20202fff, #7d7d7dff, #ecececff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #ac1d00ff, #e26200ff, #fc9600ff, #0f0f0fff, #20202fff, #7d7d7dff, #ecececff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #ac1d00ff, #e26200ff, #fc9600ff, #0f0f0fff, #20202fff, #7d7d7dff, #ecececff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #ac1d00ff, #e26200ff, #fc9600ff, #0f0f0fff, #20202fff, #7d7d7dff, #ecececff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #ac1d00ff, #e26200ff, #fc9600ff, #0f0f0fff, #20202fff, #7d7d7dff, #ecececff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #ac1d00ff, #e26200ff, #fc9600ff, #0f0f0fff, #20202fff, #7d7d7dff, #ecececff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #ac1d00ff, #e26200ff, #fc9600ff, #0f0f0fff, #20202fff, #7d7d7dff, #ecececff, #ffffffff);
+$gradient-radial: radial-gradient(#ac1d00ff, #e26200ff, #fc9600ff, #0f0f0fff, #20202fff, #7d7d7dff, #ecececff, #ffffffff);
 
 $font_header: 'Roboto', 'sans-serif';
 $font_weight_h1: 600;
