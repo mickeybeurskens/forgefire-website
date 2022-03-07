@@ -4,8 +4,7 @@ import styles from '../styles/button.module.scss'
 const PrimaryButton = ({text}) => {
   return (
     <>
-      <button type="button" 
-      className={styles.primary + " btn btn-primary btn-lg px-4 gap-3"}>
+      <button className={styles.primary}>
         {text}
       </button>
     </> 
@@ -15,8 +14,7 @@ const PrimaryButton = ({text}) => {
 const SecondaryButton = ({text}) => {
   return (
     <>
-      <button type="button" 
-      className={styles.secondary + " btn btn-outline-secondary btn-lg px-4"}>
+      <button className={styles.secondary}>
         {text}
       </button>
     </>

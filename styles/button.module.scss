@@ -1,8 +1,15 @@
 @import 'default_style';
 
 .primary {
+  font-family: $font-body;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: $c-white;
+  border-radius: 31px;
   background-color: $c-spanish-orange;
+  border-style: solid;
   border-color: $c-spanish-orange;
+  padding: 0.3rem 1rem; 
 }
 
 .primary:hover {
@@ -11,10 +18,22 @@
   color: $c-spanish-orange;
 }
 
+.primary:focus {
+  background-color: $c-spanish-orange;
+  border-color: $c-spanish-orange;
+  color: $c-white;
+  box-shadow: $c-spanish-orange;
+}
+
 .secondary {
+  font-family: $font-body;
+  font-weight: bold;
+  font-size: 1.3rem;
   color: $c-gray-web;
+  border-radius: 31px;
   background-color: $c-white;
   border-color: $c-gray-web;
+  border-radius: 31px;
 }
 
 .secondary:hover {

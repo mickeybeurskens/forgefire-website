@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { PrimaryButton, SecondaryButton } from '../Button'
+import { PrimaryButton } from '../Button'
 import styles from '../../styles/home/hero.module.scss'
 
 const Hero = () => {
@@ -14,9 +14,9 @@ const Hero = () => {
           <p className={styles.text}>Engineering Projects</p>
           <p className={styles.text}>In-House Software</p>
         </div>
-        <div className="d-grid gap-2 p-4 d-sm-flex justify-content-sm-center">
-          <PrimaryButton text={"Read Blogs"}/>
-          <SecondaryButton text={"Consultancy"}/>
+        <div className="d-grid gap-3 p-4 d-sm-flex justify-content-sm-center">
+          <PrimaryButton text={"Projects"}/>
+          <PrimaryButton text={"Consultancy"}/>
         </div>
       </div>
       <div className={styles.line + " d-flex"}/>
