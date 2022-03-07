@@ -1,12 +1,3 @@
-// $accent_1: #ac1d00;
-// $accent_2: #e26200;
-// $accent_3: #fc9600;
-// $dark_1: #0f0f0f;
-// $dark_2: #20202f;
-// $dark_3: #7d7d7d;
-// $light_1: #ececec;
-// $light_2: #ffffff;
-
 /* SCSS HEX */
 $c-rufous: #ac1d00ff;
 $c-spanish-orange: #e26200ff;
@@ -28,16 +19,16 @@ $gradient-top-left: linear-gradient(225deg, #ac1d00ff, #e26200ff, #fc9600ff, #0f
 $gradient-bottom-left: linear-gradient(315deg, #ac1d00ff, #e26200ff, #fc9600ff, #0f0f0fff, #20202fff, #7d7d7dff, #ecececff, #ffffffff);
 $gradient-radial: radial-gradient(#ac1d00ff, #e26200ff, #fc9600ff, #0f0f0fff, #20202fff, #7d7d7dff, #ecececff, #ffffffff);
 
-$font_header: 'Roboto', 'sans-serif';
-$font_weight_h1: 600;
-$font_weight_h2: 300;
-$font_weight_h3: 300;
-$font_weight_h4: 500;
-$font_weight_h5: 400;
-$font_weight_h6: 400;
+$font-header: 'Roboto', 'sans-serif';
+$font-weight-h1: 600;
+$font-weight-h2: 300;
+$font-weight-h3: 300;
+$font-weight-h4: 500;
+$font-weight-h5: 400;
+$font-weight-h6: 400;
 
-$font_body: 'Titillium Web', 'sans-serif';
-$font_body_weight: 300;
+$font-body: 'Titillium Web', 'sans-serif';
+$font-body-weight: 300;
 
 /* Standard Style Variables */
 $c-main-1: $c-white;

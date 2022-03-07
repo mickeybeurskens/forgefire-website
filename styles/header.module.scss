@@ -5,11 +5,18 @@
 }
 
 .text {
-  color: $c-main-1;
+  font: $font-header;
+  font-weight: $font-weight-h1;
 }
 
 .logo {
   background: #FFFFFF;
   border-radius: 100px;
   margin: 10px 10px;
+  width: 55px;
+  height: 55px;
+}
+
+.socials {
+  margin-left: 0.5rem;
 }
