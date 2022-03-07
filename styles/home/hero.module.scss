@@ -1,7 +1,7 @@
 @import '../default_style';
 
 .home_hero {
-  margin: 20vh 0;
+  margin: 12vh 0;
 }
 
 .header {
@@ -36,7 +36,26 @@
   width: 75vw;
   max-width: 1200px;
   margin: auto;
-  margin-top: 5rem;
+  margin-top: 3rem;
   border: 1px solid $c-raisin-black;
   border-radius: 10px;
+}
+
+.feature_text {
+  font-family: $font-body;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  text-align: center;
+  width: 60vw;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 4rem;
+  color: $c-text-1;
+}
+
+.feature_text span {
+  font-weight: bold;
+  color: $c-yellow-orange;
 }

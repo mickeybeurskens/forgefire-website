@@ -20,6 +20,14 @@ const Hero = () => {
         </div>
       </div>
       <div className={styles.line + " d-flex"}/>
+      <div className={styles.feature_text}>
+        <p>
+          Forge Fire designs, builds and tests <span>software</span> for <span>web apps</span>,
+          <span> engineering projects</span> and <span>in-house software</span>.
+          Browse some <span>projects</span> or take a look at
+          <span> customer testimonials</span> to see what Forge Fire does!
+        </p>
+      </div>
     </div>
   )
 }
