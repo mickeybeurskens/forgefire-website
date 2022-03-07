@@ -50,8 +50,6 @@ const Header = () => {
           alt='linkedin logo' width={socials_size} height={socials_size}/>
       </a>
     </div>
-
-
     </Container>
     </Navbar> 
   )
