@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { PrimaryButton, SecondaryButton } from '../Button'
-import styles from '../../styles/home/Hero.module.scss'
+import styles from '../../styles/home/hero.module.scss'
 
 const Hero = () => {
   return (

@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import { PrimaryButton } from "./Button"
-import styles from '../styles/PostOverview.module.scss'
+import styles from '../styles/post_overview.module.scss'
 
 const blogsPublished = (blog) => (
   new Date() - new Date(blog.date) > 0

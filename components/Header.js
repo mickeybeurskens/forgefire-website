@@ -4,12 +4,12 @@ import { useRouter } from 'next/router'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import styles from '../styles/Header.module.scss'
+import styles from '../styles/header.module.scss'
 
 const Header = () => {
   const headerPageNames = [
     {name: 'Home', link: '/'},
-    {name: 'Blog', link: '/posts'},
+    {name: 'Projects', link: '/projects'},
     {name: 'Consultancy', link: '/consultancy'},
     {name: 'Contact', link: '/contact'}
   ]
@@ -18,10 +18,10 @@ const Header = () => {
   return (
     <Navbar className={styles.navigation} variant="light">
     <Container>
-    <Navbar.Brand href="/">
-      <Image src='/logo_forge_fire.png' alt='forge fire logo'
-        width="48" height="48"/>
-    </Navbar.Brand>
+    <div className={styles.logo}>
+      <Image src='/logo_forge_fire.svg' 
+        alt='forge fire logo' width="55" height="55"/>
+    </div>
     <Nav className="me-auto">
       {headerPageNames.map((pageInfo, index) => (
         <Link key={index} href={pageInfo.link}>

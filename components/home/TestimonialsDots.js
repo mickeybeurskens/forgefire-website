@@ -1,4 +1,4 @@
-import styles from "../../styles/home/TestimonialsDots.module.scss"
+import styles from "../../styles/home/testimonials_dots.module.scss"
 
 
 const Slide = () => {

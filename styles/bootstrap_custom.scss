@@ -1,0 +1,8 @@
+@import 'default_style';
+
+$navbar-light-active-color: $c-raisin-black;
+$navbar-light-hover-color: $c-raisin-black;
+$navbar-light-color: $c-white;
+$navbar-padding-y: 0;
+
+@import "node_modules/bootstrap/scss/bootstrap";
