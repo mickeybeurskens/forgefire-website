@@ -5,8 +5,9 @@
 }
 
 .text {
-  font: $font-header;
-  font-weight: $font-weight-h1;
+  font-family: $font-header;
+  font-weight: 700;
+  font-size: medium;
 }
 
 .logo {
