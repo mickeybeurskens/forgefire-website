@@ -1,5 +1,5 @@
 ---
-title: This Is Django
+title: This Is Django and some more text
 author: Mickey Beurskens
 date: "2022-02-16"
 ---

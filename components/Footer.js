@@ -3,12 +3,14 @@ import Image from 'next/image'
 import {useRouter} from 'next/router'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
+import Logo from './Logo'
+import styles from '../styles/footer.module.scss'
 
 const MenuItems = () => {
   const footerPageNames = [
-    {name: 'Home', link: '/'},
-    {name: 'Blog', link: '/posts'},
-    {name: 'Consultancy', link: '/consultancy'},
+    {name: 'Privacy Policy', link: '/'},
+    {name: 'About', link: '/posts'},
+    {name: 'Contact', link: '/consultancy'},
   ]
   
   const currentPath = useRouter().pathname
@@ -38,8 +40,8 @@ const CopyRight = () => (
 
 const Footer = () => {
   return (
-    <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <CopyRight/>
+    <footer className={styles.footer + " d-flex flex-wrap justify-content-between align-items-center"}>
+    <Logo size={40}/>
     <MenuItems/>
     </footer>
   )

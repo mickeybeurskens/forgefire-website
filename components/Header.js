@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
+import Logo from './Logo'
 import styles from '../styles/header.module.scss'
 import configs from '../lib/configs.js'
 
@@ -21,14 +22,7 @@ const Header = () => {
   return (
     <Navbar className={styles.navigation} variant="light">
     <Container>
-    <div className={styles.logo}>
-      <Link href='/'>
-        <a>
-          <Image src='/logo_forge_fire.svg' 
-            alt='forge fire logo' width="55" height="55"/>
-        </a>
-      </Link>
-    </div>
+    <Logo size={55}/>
     <Nav className="me-auto">
       {headerPageNames.map((pageInfo, index) => (
         <Link key={index} href={pageInfo.link}>
