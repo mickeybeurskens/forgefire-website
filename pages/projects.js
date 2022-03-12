@@ -11,7 +11,7 @@ const Posts = ({posts}) => {
 }
 
 const getStaticProps = async () => {
-  const posts = getAllPosts(['slug', 'date', 'title'])
+  const posts = getAllPosts(['slug', 'date', 'title', 'summary', 'img_path'])
   return {
     props: {
       posts: posts

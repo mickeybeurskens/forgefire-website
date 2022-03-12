@@ -21,9 +21,7 @@ const getStaticProps = async ({ params }) => {
     'date',
     'slug',
     'author',
-    'content',
-    'ogImage',
-    'coverImage'
+    'content'
   ])
 return {
     props: {

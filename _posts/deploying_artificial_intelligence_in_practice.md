@@ -3,7 +3,7 @@ title: Deploying Artificial Intelligence In Practice
 author: Mickey Beurskens
 date: "2021-12-01"
 summary: "Summary of ai deploy"
-img_path: /public/images/projects/card/analyzing_the_forge_fire_website.png
+img_path: /images/projects/card/pcb.jpg
 ---
 
 # Inquit et petit paventque et omnia

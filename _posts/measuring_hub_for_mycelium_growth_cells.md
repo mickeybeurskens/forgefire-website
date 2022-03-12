@@ -3,7 +3,7 @@ title: Measuring Hub For Mycelium Growth Cells
 author: Mickey Beurskens
 date: "2022-02-14"
 summary: "Summary of mycelium project"
-img_path: /public/images/projects/card/analyzing_the_forge_fire_website.png
+img_path: /images/projects/card/mushrooms.jpg
 ---
 
 # Inquit et petit paventque et omnia
