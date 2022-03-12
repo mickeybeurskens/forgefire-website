@@ -8,14 +8,14 @@ import configs from '../lib/configs'
 
 const MenuItems = () => {
   const footerPageNames = [
-    {name: 'Privacy Policy', link: '/'},
-    {name: 'About', link: '/posts'},
-    {name: 'Contact', link: '/consultancy'},
+    {name: 'Privacy Policy', link: '/privacy-policy'},
+    {name: 'About', link: '/about'},
+    {name: 'Contact', link: '/contact'},
   ]
   
   const currentPath = useRouter().pathname
   return (
-  <Navbar className='ol-md-4 justify-content-end list-unstyled d-flex'>
+  <Navbar className='ol-md-4 justify-content-center list-unstyled d-flex'>
   <Nav >
   {footerPageNames.map((pageInfo, index) => (
     <Link key={index} href={pageInfo.link}>
@@ -30,21 +30,22 @@ const MenuItems = () => {
 }
 
 const CopyRight = () => (
-  <p className={styles.copy_right}>&copy; {new Date().getFullYear().toString()} Forge Fire</p>
+  <p className={styles.copy_right}>Copyright &copy; {new Date().getFullYear().toString()} - Forge Fire</p>
 )
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-    
-    <Logo size={45}/>
-    <div>
+    <div className={styles.item}>
+      <Logo size={45}/>
+    </div>
+    <div className={styles.item}>
       <MenuItems/>
       <CopyRight/>
     </div>
-    <div>
-      <p>{"KVK: " + configs.kvk_number}</p>
-      <p>{"BTW: " + configs.btw_number}</p>
+    <div className={styles.item}>
+      <p className={styles.info}>{"KVK: " + configs.kvk_number}</p>
+      <p className={styles.info}>{"BTW: " + configs.btw_number}</p>
     </div>
     </footer>
   )

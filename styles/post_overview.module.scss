@@ -1,10 +1,7 @@
 .overview {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
   align-items: stretch;
-}
-
-.card_item {
-  flex-basis: 17em;
-  align-items: stretch;
+  flex-wrap: wrap;
 }

@@ -17,4 +17,19 @@
 
 .copy_right {
   text-align: center;
+  font-family: $font-body;
+  color: $c-white;
 }
+
+.item {
+  flex-basis: 17em;
+  align-items: stretch;
+}
+
+.info {
+  margin: 0.6rem;
+  color: $c-white;
+  text-align: end;
+  font-size: 0.8rem;
+}
+
