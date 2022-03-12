@@ -2,6 +2,9 @@
 
 .footer {
   background-color: $c-accent-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -10,4 +13,8 @@
   margin: 10px 10px;
   width: 55px;
   height: 55px;
+}
+
+.copy_right {
+  text-align: center;
 }

@@ -1,11 +1,7 @@
-import Image from "next/image"
-import Card from "react-bootstrap/Card"
-import Button from "react-bootstrap/Button"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import FeaturedCard from "./FeaturedCard"
-import { PrimaryButton } from "./Button"
-import styles from '../styles/post_overview.module.scss'
+import styles from "../styles/post_overview.module.scss"
 
 const blogsPublished = (blog) => (
   new Date() - new Date(blog.date) > 0
@@ -13,9 +9,7 @@ const blogsPublished = (blog) => (
 
 const PostCard = ({blog}) => {
   return (
-    <Col>
-      <FeaturedCard title={blog.title} img_path="/logo_forge_fire.svg" text="Filler"/>
-    </Col>
+    <FeaturedCard title={blog.title} img_path="/logo_forge_fire.svg" text="Filler"/> 
   )
 }
 
@@ -28,12 +22,10 @@ const PostOverview = ({posts, numberOfBlogs}) => {
     sortedBlogs = publishedBlogs
   }
   return (
-    <div>
-    <Row className="mb-5 p-4 g-3">
+    <div className={styles.overview}>
         {sortedBlogs.map((blog, index) => (
           <PostCard key={index} blog={blog}/>          
         ))}
-      </Row>
     </div>
   )
 }
