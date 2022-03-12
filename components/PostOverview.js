@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
+import FeaturedCard from "./FeaturedCard"
 import { PrimaryButton } from "./Button"
 import styles from '../styles/post_overview.module.scss'
 
@@ -13,7 +14,8 @@ const blogsPublished = (blog) => (
 const PostCard = ({blog}) => {
   return (
     <Col>
-    <Card>
+      <FeaturedCard title={blog.title} img_path="/logo_forge_fire.svg" text="Filler"/>
+    {/* <Card>
     <Card.Img src="/logo_forge_fire.svg" alt="blog image" height="200" width="200"/>  
     <Card.Body>
       <Card.Title><h4>{blog.title}</h4></Card.Title>
@@ -25,7 +27,7 @@ const PostCard = ({blog}) => {
     <Card.Footer>
       <PrimaryButton className={styles.button} text={"Read"}/>
     </Card.Footer>
-    </Card>
+    </Card> */}
     </Col>
   )
 }
