@@ -6,12 +6,17 @@
   margin: 0.5rem 0;
 }
 
+.link {
+  flex-basis: 17em;
+  align-items: stretch;
+  text-decoration: none;
+}
+
 .card {
   background-color: $c-spanish-orange;
   padding: 0.7rem;
   border-radius: 1.2rem;
-  flex-basis: 17em;
-  align-items: stretch;
+  height: 100%;
 }
 
 .title {

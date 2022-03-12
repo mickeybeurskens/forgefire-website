@@ -9,7 +9,8 @@ const blogsPublished = (blog) => (
 
 const PostCard = ({blog}) => {
   return (
-    <FeaturedCard title={blog.title} img_path="/logo_forge_fire.svg" text="Filler"/> 
+    <FeaturedCard title={blog.title} img_path={blog.img_path} 
+      text={blog.summary} stub={blog.slug}/> 
   )
 }
 

@@ -1,7 +1,9 @@
 ---
-title: Words on CSS 
+title: Measuring Hub For Mycelium Growth Cells
 author: Mickey Beurskens
-date: "2021-12-01"
+date: "2022-02-14"
+summary: "Summary of mycelium project"
+img_path: /public/images/projects/card/analyzing_the_forge_fire_website.png
 ---
 
 # Inquit et petit paventque et omnia
