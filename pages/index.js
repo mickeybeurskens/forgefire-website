@@ -2,8 +2,6 @@ import React from 'react'
 import Hero from '../components/home/Hero'
 import Swirl from '../components/Swirl'
 import PostOverview from '../components/PostOverview'
-import ServiceOverview from '../components/home/ServiceOverview'
-import TestimonialsDots from '../components/home/TestimonialsDots'
 import { getAllPosts } from '../lib/post'
 import styles from "../styles/home.module.scss"
 
@@ -12,9 +10,10 @@ const Home = (props) => {
     <main>
       <Hero/>
       <Swirl/>
-      <div className={styles.alt_bg}>
+      <div id="projects" className={styles.alt_bg}>
+        <h2 className='center_h2'>Project Highlights</h2>
+        <p></p>
         <PostOverview posts={props.posts} numberOfBlogs={3}/>
-        {/* <TestimonialsDots/> */}
       </div>
     </main>
   )
