@@ -14,7 +14,7 @@ const Home = (props) => {
       <Swirl/>
       <div className={styles.alt_bg}>
         <PostOverview posts={props.posts} numberOfBlogs={3}/>
-        <TestimonialsDots/>
+        {/* <TestimonialsDots/> */}
       </div>
     </main>
   )
