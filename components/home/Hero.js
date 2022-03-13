@@ -15,8 +15,8 @@ const Hero = () => {
           <p className={styles.text}>In-House Software</p>
         </div>
         <div className="d-grid gap-3 p-4 d-sm-flex justify-content-sm-center">
-          <PrimaryButton text={"Projects"}/>
-          <PrimaryButton text={"Consultancy"}/>
+          <PrimaryButton text={"Projects"} url="/projects"/>
+          <PrimaryButton text={"Consultancy"} url="/consultancy"/>
         </div>
       </div>
       <div className={styles.line + " d-flex"}/>

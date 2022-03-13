@@ -1,12 +1,15 @@
+import Link from 'next/link'
 import styles from '../styles/button.module.scss'
 
 
-const PrimaryButton = ({text}) => {
+const PrimaryButton = ({text, url}) => {
   return (
     <>
-      <button className={styles.primary}>
-        {text}
-      </button>
+      <Link href={url} passHref><a>
+        <button className={styles.primary}>
+          {text}
+        </button>
+      </a></Link>
     </> 
   )
 }
