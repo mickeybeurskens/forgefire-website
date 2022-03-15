@@ -13,3 +13,13 @@
 .socials {
   margin-left: 0.5rem;
 }
+
+.socials a {
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 500px) {
+  .socials{
+    margin: 1rem 0;
+  }
+}

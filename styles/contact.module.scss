@@ -24,10 +24,11 @@
   text-align: center;
   color: $c-white;
   background: linear-gradient(87.43deg, $c-yellow-orange 0%,
-  $c-spanish-orange 100%);
+    $c-spanish-orange 100%);
   width: 25rem;
   margin: auto;
   border-radius: 10px;
+  padding-bottom: 5px;
 }
 
 .email_link {
