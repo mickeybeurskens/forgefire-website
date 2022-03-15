@@ -1,24 +1,16 @@
 import React from 'react'
 import Hero from '../components/home/Hero'
-import { Swirl, InvSwirl } from '../components/Swirl'
-import PostOverview from '../components/PostOverview'
+import ProjectHighlights from '../components/ProjectHighlights'
 import About from '../components/About'
 import Divider from '../components/Divider'
 import { getAllPosts } from '../lib/post'
-import styles from "../styles/home.module.scss"
 import Contact from '../components/Contact'
 
 const Home = (props) => {
   return (
     <main>
       <Hero/>
-      <Swirl/>
-      <div id="projects" className={styles.alt_bg}>
-        <h2 className='center_h2'>Project Highlights</h2>
-        <p></p>
-        <PostOverview posts={props.posts} numberOfBlogs={3}/>
-      </div>
-      <InvSwirl/>
+      <ProjectHighlights posts={props.posts}/>
       <About/>
       <Divider/>
       <Contact/>

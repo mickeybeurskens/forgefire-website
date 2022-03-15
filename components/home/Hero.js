@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
       </div>
       <Divider/>
-      <div className="feature_text">
+      <div className={styles.feature + " feature_text"}>
         <p>
           Forge Fire designs, builds and tests <span>software</span> for <span>web apps</span>,
           <span> engineering projects</span> and <span>in-house software</span>.
