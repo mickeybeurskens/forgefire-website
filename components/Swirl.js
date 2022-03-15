@@ -8,4 +8,12 @@ const Swirl = () => {
   )
 }
 
-export default Swirl
+const InvSwirl = () => {
+  return (
+    <>
+      <div className={styles.invswirl}/>
+    </>
+  )
+}
+
+export {Swirl, InvSwirl}

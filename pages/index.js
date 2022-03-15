@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../components/home/Hero'
-import Swirl from '../components/Swirl'
+import { Swirl, InvSwirl } from '../components/Swirl'
 import PostOverview from '../components/PostOverview'
 import { getAllPosts } from '../lib/post'
 import styles from "../styles/home.module.scss"
@@ -15,6 +15,7 @@ const Home = (props) => {
         <p></p>
         <PostOverview posts={props.posts} numberOfBlogs={3}/>
       </div>
+      <InvSwirl/>
     </main>
   )
   }
