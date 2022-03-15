@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Divider from '../Divider'
 import { PrimaryButton } from '../Button'
 import styles from '../../styles/home/hero.module.scss'
 
@@ -19,7 +19,7 @@ const Hero = () => {
           <PrimaryButton text={"About Forge Fire"} url="/About"/>
         </div>
       </div>
-      <div className={styles.line + " d-flex"}/>
+      <Divider/>
       <div className="feature_text">
         <p>
           Forge Fire designs, builds and tests <span>software</span> for <span>web apps</span>,

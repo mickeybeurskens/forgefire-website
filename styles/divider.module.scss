@@ -1,0 +1,11 @@
+@import "default_style";
+
+.divider {
+  display: flex;
+  width: 75vw;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 3rem;
+  border: 1px solid $c-raisin-black;
+  border-radius: 10px;
+}

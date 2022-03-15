@@ -3,8 +3,10 @@ import Hero from '../components/home/Hero'
 import { Swirl, InvSwirl } from '../components/Swirl'
 import PostOverview from '../components/PostOverview'
 import About from '../components/About'
+import Divider from '../components/Divider'
 import { getAllPosts } from '../lib/post'
 import styles from "../styles/home.module.scss"
+import Contact from '../components/Contact'
 
 const Home = (props) => {
   return (
@@ -18,9 +20,11 @@ const Home = (props) => {
       </div>
       <InvSwirl/>
       <About/>
+      <Divider/>
+      <Contact/>
     </main>
   )
-  }
+}
 
 const getStaticProps = async () => {
   const posts = getAllPosts(['slug', 'date', 'title',
