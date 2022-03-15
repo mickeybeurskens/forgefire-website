@@ -33,3 +33,11 @@
 .email_link {
   text-decoration: none;
 }
+
+@media (max-width: 500px) {
+  .email {
+    font-size: 32px;
+    width: 20rem;
+    margin: auto;
+  }
+}

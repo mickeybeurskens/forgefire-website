@@ -2,10 +2,12 @@
   display: flex;
   justify-content: center;
   padding-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .image_col {
   flex-basis: 1;
+  min-width: 300px;
 }
 
 .text_col {
@@ -23,4 +25,16 @@
 .title {
   text-align: left;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 500px) {
+  .text {
+    text-align: center;
+  }
+  
+  .title {
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }
