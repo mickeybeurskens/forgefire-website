@@ -1,0 +1,20 @@
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.image_col {
+  flex-basis: 1;
+}
+
+.text_col {
+  flex-basis: 3;
+}
+
+.profile {
+  border-radius: 100%;
+}
+
+.text {
+  text-align: left;
+}
