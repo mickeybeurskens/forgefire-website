@@ -7,7 +7,7 @@ const ProjectHighlights = ({posts}) => {
     <>
           <Swirl/>
       <div id="projects" className={styles.alt_bg}>
-        <h2 className='center_h2'>Project Highlights</h2>
+        <h2 className={styles.title + ' center_h2'}>Project Highlights</h2>
         <p></p>
         <PostOverview posts={posts} numberOfBlogs={3}/>
       </div>

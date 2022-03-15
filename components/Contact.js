@@ -1,16 +1,19 @@
 import styles from "../styles/contact.module.scss"
+import configs from "../lib/configs"
 
 const Contact = () => {
   return (
-    <div className={styles.margin}>
-      <h2 className="center_h2">Contact Us!</h2>
+    <div id="contact" className={styles.margin}>
+      <h2 className={"center_h2 " + styles.title}>Contact Us!</h2>
       <div className="feature_text">
-        <p>
+        <p className={styles.text}>
         Since <span>carrier pigeons</span> have been &quot;out of style&quot;
         for a while now, you can <span>reach us</span> through email.
         </p>
       </div>
-      <p className={styles.email}>info@forgefire.dev</p>
+      <a className={styles.email_link} href={"mailto:" + configs.email}>
+        <p className={styles.email}>info@forgefire.dev</p>
+      </a>
     </div>
   )
 }

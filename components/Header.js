@@ -12,8 +12,9 @@ import configs from '../lib/configs.js'
 const Header = () => {
   const headerPageNames = [
     {name: 'Home', link: '/'},
-    {name: 'About', link: '/about'},
-    {name: 'Contact', link: '/contact'}
+    {name: 'Projects', link: '/#projects'},
+    {name: 'About', link: '/#about'},
+    {name: 'Contact', link: '/#contact'}
   ]
   const socials_size = 35;
 

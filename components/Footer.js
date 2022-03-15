@@ -8,9 +8,9 @@ import configs from '../lib/configs'
 
 const MenuItems = () => {
   const footerPageNames = [
-    {name: 'Privacy Policy', link: '/privacy-policy'},
-    {name: 'About', link: '/about'},
-    {name: 'Contact', link: '/contact'},
+    {name: 'Home', link: '/'},
+    {name: 'About', link: '/#about'},
+    {name: 'Contact', link: '/#contact'},
   ]
   
   const currentPath = useRouter().pathname

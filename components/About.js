@@ -3,13 +3,13 @@ import styles from "../styles/about.module.scss"
 
 const About = () => {
   return (
-    <div className={styles.flex}>
+    <div id="about" className={styles.flex}>
       <div className={styles.image_col}>
         <Image src='/images/profile.jpg' alt="profile picture"
           height={300} width={300} className={styles.profile}/>
       </div>
       <div className={styles.text_col}>
-        <h2 className={styles.text + " center_h2"}>Bringing You Forge Fire</h2>
+        <h2 className={"center_h2 " + styles.title}>Bringing You Forge Fire</h2>
         <div className="feature_text">
         <p className={styles.text}>
           Hi, I’m <span>Mickey Beurskens</span>, founder of Forge Fire. 
