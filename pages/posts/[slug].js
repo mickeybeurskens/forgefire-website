@@ -1,6 +1,5 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import Link from 'next/link'
 import { getAllPosts, getPostBySlug } from '../../lib/post'
 import ReactMarkdown from 'react-markdown'
 
@@ -9,7 +8,7 @@ const Post = ({post}) => {
   const { id } = router.query
   return (
     <>
-      <p>{post.author} </p>
+      <p>{post.author} and {id} </p>
       <ReactMarkdown>{post.content}</ReactMarkdown>
     </>
   )

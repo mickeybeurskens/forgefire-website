@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
@@ -36,11 +35,11 @@ const Header = () => {
       </Nav>
       <div className={styles.socials}>
         <a href={configs.github_url}>
-          <Image src='/github_logo.png'
+          <img src='/github_logo.png'
             alt='github logo' width={socials_size} height={socials_size}/>
         </a>
         <a href={configs.linkedin_url}>
-          <Image src='/linkedin_logo.png'
+          <img src='/linkedin_logo.png'
             alt='linkedin logo' width={socials_size} height={socials_size}/>
         </a>
       </div>

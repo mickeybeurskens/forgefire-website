@@ -1,11 +1,11 @@
-import Image from "next/image"
+// import Image from "next/image"
 import styles from "../styles/about.module.scss"
 
 const About = () => {
   return (
     <div id="about" className={styles.flex}>
       <div className={styles.image_col}>
-        <Image src='/images/profile.jpg' alt="profile picture"
+        <img src='/images/profile.jpg' alt="profile picture"
           height={300} width={300} className={styles.profile}/>
       </div>
       <div className={styles.text_col}>
