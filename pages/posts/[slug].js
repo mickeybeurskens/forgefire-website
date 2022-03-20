@@ -1,29 +1,25 @@
 import React from 'react'
-import { useRouter } from 'next/router'
 import { getAllPosts, getPostBySlug } from '../../lib/post'
 import Contact from '../../components/Contact'
+import Divider from '../../components/Divider'
 import ReactMarkdown from 'react-markdown'
 import styles from '../../styles/posts.module.scss'
-import Divider from '../../components/Divider'
 
 const PostHero = ({img_path}) => {
   return (
-      <div style={{backgroundImage: 'url(' + img_path + ')',
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        height: 200}}/>
+      <div style={{backgroundImage: 'url(' + img_path + ')'}} 
+        className={styles.post_hero}/>
   )
 }
 
 const Post = ({post}) => {
-  const router = useRouter()
-  const { id } = router.query
   return (
     <div>
       <PostHero img_path={post.img_path}/>
       <div className={styles.posts}>
-        <p>{post.author} and {id} </p>
+        <div className='bg-gradient'>
+          <p className={styles.metadata}>Written by {post.author} on {post.date} </p>
+        </div>
         <ReactMarkdown>{post.content}</ReactMarkdown>
       </div>
       <Divider/>

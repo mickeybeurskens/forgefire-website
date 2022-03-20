@@ -63,3 +63,17 @@
 .posts a:hover {
   color: $c-yellow-orange;
 }
+
+.post_hero {
+  margin-bottom: 2rem;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.posts .metadata {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1rem;
+}
