@@ -2,15 +2,16 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import { getAllPosts, getPostBySlug } from '../../lib/post'
 import ReactMarkdown from 'react-markdown'
+import styles from '../../styles/posts.module.scss'
 
 const Post = ({post}) => {
   const router = useRouter()
   const { id } = router.query
   return (
-    <>
+    <div className={styles.posts}>
       <p>{post.author} and {id} </p>
       <ReactMarkdown>{post.content}</ReactMarkdown>
-    </>
+    </div>
   )
 }
 

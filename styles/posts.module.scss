@@ -1,0 +1,42 @@
+@import "default_style";
+
+.posts h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.posts h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.posts {
+  margin: auto;
+  max-width: 60rem;
+}
+
+.posts p {
+  margin: auto;
+  font-size: 1.1rem;
+  font-weight: 400;
+  max-width: 45rem;
+  margin-bottom: 1rem;
+}
+
+.posts img {
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.posts li {
+  font-weight: 600;
+  margin: 0.4rem;
+
+}
+
+.posts ul {
+  margin: auto;
+  max-width: 40rem;
+  background-color: $c-main-2;
+  border-radius: 1rem;
+}
