@@ -2,12 +2,12 @@
 
 .posts h1 {
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .posts h2 {
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .posts {
@@ -17,26 +17,49 @@
 
 .posts p {
   margin: auto;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   max-width: 45rem;
   margin-bottom: 1rem;
+  line-height: 2.1rem;
 }
 
 .posts img {
+  display: block;
+  margin: auto;
   max-width: 600px;
   max-height: 600px;
+  border-radius: 20px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .posts li {
   font-weight: 600;
   margin: 0.4rem;
-
+  font-size: 1.1rem;
+  color: $c-white;
 }
 
 .posts ul {
+  padding: 2rem;
   margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   max-width: 40rem;
   background-color: $c-main-2;
+  background: linear-gradient(-87.43deg, $c-yellow-orange 0%,
+    $c-spanish-orange 100%);
   border-radius: 1rem;
+  list-style-type: circle;
+}
+
+.posts a{
+  border-radius: 4px;
+  padding: 0 3px;
+  color: $c-yellow-orange;
+}
+
+.posts a:hover {
+  color: $c-yellow-orange;
 }
