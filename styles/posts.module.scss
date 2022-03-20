@@ -65,7 +65,6 @@
 }
 
 .post_hero {
-  margin-bottom: 2rem;
   height: 200px;
   background-position: center;
   background-size: cover;
@@ -76,4 +75,12 @@
   font-style: italic;
   font-weight: 700;
   font-size: 1rem;
+}
+
+.posts .metabg {
+  background: linear-gradient(87.43deg, $c-yellow-orange 0%,
+    $c-spanish-orange 100%);
+  color: $c-white;
+  margin-top: 0px;
+  margin-bottom: 2rem;
 }

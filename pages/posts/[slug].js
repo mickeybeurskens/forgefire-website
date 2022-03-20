@@ -17,7 +17,7 @@ const Post = ({post}) => {
     <div>
       <PostHero img_path={post.img_path}/>
       <div className={styles.posts}>
-        <div className='bg-gradient'>
+        <div className={styles.metabg}>
           <p className={styles.metadata}>Written by {post.author} on {post.date} </p>
         </div>
         <ReactMarkdown>{post.content}</ReactMarkdown>
