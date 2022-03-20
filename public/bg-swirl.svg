@@ -7,8 +7,11 @@
    viewBox="0 0 106.91746 14.916584"
    version="1.1"
    id="svg5"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
    sodipodi:docname="bg-swirl.svg"
+   inkscape:export-filename="/home/bluegnome/Projects/forgefire-website/public/bg-swirl.png"
+   inkscape:export-xdpi="403.73599"
+   inkscape:export-ydpi="403.73599"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.0494603"
-     inkscape:cx="120.53814"
-     inkscape:cy="139.11912"
+     inkscape:zoom="2.5903077"
+     inkscape:cx="70.454951"
+     inkscape:cy="102.6905"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -40,8 +43,8 @@
      id="layer1"
      transform="translate(-33.912284,-89.456728)">
     <path
-       style="fill:#ececec;stroke:#ececec;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 34.044797,99.327606 c 63.109767,0 80.426033,-0.173695 106.652653,-9.682198 V 104.24102 H 34.053018 Z"
+       style="fill:#ececec;stroke:#ececec;stroke-width:0.267858px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 32.43257,99.327371 c 64.688173,0 82.43753,-0.173678 109.32009,-9.681255 V 104.24031 H 32.440996 Z"
        id="path61"
        sodipodi:nodetypes="ccccc" />
   </g>

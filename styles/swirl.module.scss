@@ -1,14 +1,14 @@
 .swirl {
   background-image: url('../public/bg-swirl.svg');
-  padding-top: 15%;
+  height: 15rem;
   background-size: cover;
-  margin-bottom: -2%;
+  margin-top: -6rem;
 }
 
 .invswirl {
   background-image: url('../public/bg-swirl.svg');
-  padding-bottom: 15%;
   background-size: cover;
   transform: rotate(180deg);
-  margin-top: -2%;
+  height: 15rem;
+  margin-bottom: -6rem;
 }

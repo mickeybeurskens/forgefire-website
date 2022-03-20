@@ -21,7 +21,7 @@ const Post = ({post}) => {
   const { id } = router.query
   return (
     <div>
-      {/* <PostHero img_path={post.img_path}/> */}
+      <PostHero img_path={post.img_path}/>
       <div className={styles.posts}>
         <p>{post.author} and {id} </p>
         <ReactMarkdown>{post.content}</ReactMarkdown>
