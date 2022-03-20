@@ -16,10 +16,10 @@ const Post = ({post}) => {
   return (
     <div>
       <PostHero img_path={post.img_path}/>
+      <div className={styles.metabg}>
+        <p className={styles.metadata}>Written by {post.author} on {post.date} </p>
+      </div>
       <div className={styles.posts}>
-        <div className={styles.metabg}>
-          <p className={styles.metadata}>Written by {post.author} on {post.date} </p>
-        </div>
         <ReactMarkdown>{post.content}</ReactMarkdown>
       </div>
       <Divider/>

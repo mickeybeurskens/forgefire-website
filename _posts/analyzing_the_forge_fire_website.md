@@ -14,7 +14,7 @@ One of the best examples of Forge Fire web development projects has to be our ow
 
 Choices, endless choices. The web development world contains more different technologies than any one developer can ever master. So which web technologies were used to build the website, and why?
 
-First off some requirements:
+First of some requirements:
 
 > - The website can be simple, with the exception of showing posts like this one.
 > - It should contain all relevant information that people want to know about when considering Forge Fire to do business.

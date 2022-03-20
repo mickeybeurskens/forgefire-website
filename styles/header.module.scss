@@ -1,7 +1,8 @@
 @import 'default_style';
 
 .navigation {
-  background-color: $c-accent-1;
+  background: linear-gradient(-87.43deg, $c-yellow-orange 0%,
+    $c-spanish-orange 100%);
 }
 
 .text {

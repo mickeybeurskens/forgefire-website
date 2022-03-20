@@ -16,6 +16,7 @@
 }
 
 .posts p {
+  text-align: justify;
   margin: auto;
   font-size: 1.2rem;
   font-weight: 400;
@@ -35,6 +36,7 @@
 }
 
 .posts li {
+  text-align: justify;
   font-weight: 600;
   margin: 0.4rem;
   font-size: 1.1rem;
@@ -54,7 +56,7 @@
   list-style-type: circle;
 }
 
-.posts a{
+.posts a {
   border-radius: 4px;
   padding: 0 3px;
   color: $c-yellow-orange;
@@ -71,14 +73,15 @@
   background-repeat: no-repeat;
 }
 
-.posts .metadata {
+.metadata {
+  text-align: center;
   font-style: italic;
   font-weight: 700;
   font-size: 1rem;
 }
 
-.posts .metabg {
-  background: linear-gradient(87.43deg, $c-yellow-orange 0%,
+.metabg {
+  background: linear-gradient(-87.43deg, $c-yellow-orange 0%,
     $c-spanish-orange 100%);
   color: $c-white;
   margin-top: 0px;
