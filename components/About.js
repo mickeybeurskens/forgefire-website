@@ -14,7 +14,7 @@ const About = () => {
         <p className={styles.text}>
           Hi, I’m <span>Mickey Beurskens</span>, founder of Forge Fire. 
           I’ve been building software and have pursued it as a passion for many years, 
-          and professionally started in 2019. I&apos;ve co-founded <a href="serpentine.ai" className="gradient_bg"> Serpentine</a>, an <span> Artificial Intelligence Association </span> for students, 
+          and professionally started in 2019. I&apos;ve co-founded <a href="https://www.serpentine.ai" className="gradient_bg">Serpentine</a>, an <span> Artificial Intelligence Association </span> for students, 
           which I suggest checking out if you are interested at all in AI. I&apos;m also running <a className="gradient_bg">Tail HQ</a>, a coworking group located in Eindhoven, The Netherlands.
         </p>
         <p className={styles.text}>

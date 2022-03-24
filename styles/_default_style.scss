@@ -20,7 +20,7 @@ $gradient-top-left: linear-gradient(225deg, #ac1d00ff, #e26200ff, #fc9600ff, #0f
 $gradient-bottom-left: linear-gradient(315deg, #ac1d00ff, #e26200ff, #fc9600ff, #0f0f0fff, #20202fff, #7d7d7dff, #ecececff, #ffffffff);
 $gradient-radial: radial-gradient(#ac1d00ff, #e26200ff, #fc9600ff, #0f0f0fff, #20202fff, #7d7d7dff, #ecececff, #ffffffff);
 
-$font-header: 'Roboto', 'sans-serif';
+$font-header: "Roboto", Helvetica, "sans-serif";
 $font-weight-h1: 600;
 $font-weight-h2: 600;
 $font-weight-h3: 300;
@@ -28,7 +28,7 @@ $font-weight-h4: 500;
 $font-weight-h5: 400;
 $font-weight-h6: 400;
 
-$font-body: 'Titillium Web', 'sans-serif';
+$font-body: "Titillium Web", Verdana, "sans-serif";
 $font-body-weight: 300;
 
 /* Standard Style Variables */
