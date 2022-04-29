@@ -12,7 +12,7 @@ const Contact = () => {
         </p>
       </div>
       <a className={styles.email_link} href={"mailto:" + configs.email}>
-        <p className={styles.email}>info@forgefire.dev</p>
+        <p className={styles.email}>{configs.email}</p>
       </a>
     </div>
   )
