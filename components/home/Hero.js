@@ -7,7 +7,7 @@ const Hero = () => {
     <div className={styles.home_hero + " d-flex text-center flex-column"}>
       {/* <Image className="d-block mx-auto" src="/logo_forge_fire.svg" alt="" width="72" height="72"/> */}
       <h1 className={styles.header}>Forge Fire</h1>
-      <h2 className={styles.subheader}>Full Stack Software Engineering</h2>
+      <h2 className={styles.subheader}>Software & Data Engineering</h2>
       <div className="col-lg-6 mx-auto p-1">
         <div className={styles.summary}>
           <p className={styles.text}>Web Apps</p>
