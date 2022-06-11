@@ -2,7 +2,7 @@ import Link from "next/link"
 import Card from "react-bootstrap/Card"
 import styles from "../styles/featured_card.module.scss"
 
-const FeaturedCard = ({title, img_path, text, slug}) => {
+const FeaturedCard = ({title, img_path, text, slug, date}) => {
   return (
     <>
       <Link href={"/posts/" + slug} passHref>
@@ -13,6 +13,7 @@ const FeaturedCard = ({title, img_path, text, slug}) => {
             <Card.Body>
               <h4 className={styles.title}>{title}</h4>
               <div className={styles.divider}/>
+            <h5 className={styles.date}>{date}</h5>
               <p className={styles.text}>{text}</p>
             </Card.Body>
           </Card>
