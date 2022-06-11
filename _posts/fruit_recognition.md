@@ -16,7 +16,7 @@ For now we have a clear goal in mind:
 
 That means that the system needs to take in a picture and return the answer with a reasonable degree of certainty. For now we'll pick common forest fruits: Cherries, pears and oranges (you can always change the fruits yourself if you don't happen to like pears).
 
-This all starts with data. And as with many problems in life the answer is "the internet". Let's use it to download some images first. Afterwards those images serve to train the model. For labels we'll trust the internet gods that our search queries make enough sense to be useful.
+This all starts with data. And as with many problems in life the answer is "the internet". Let's use it to download some images first. Afterwards those images serve to train the model. For labels we'll trust the internet gods. May our search queries make enough sense to be useful.
 
 
 ```python
@@ -90,7 +90,7 @@ failed
 ```
 
     Number of images: 300
-
+    
     (#0) []
 
 Now to unlink the unlink failed data (if there is any). This makes it easier to apply this method to other data if the need arises. 
@@ -231,7 +231,7 @@ interp.plot_top_losses(5, nrows=1)
     
 
 
-Apparently it's quite difficult to distinguish cherry blossom and cherries. Since classifying blossom is not exactly the point of this model we might continue to remove the offending images from the dataset. For now though I would call this model a succes! Now we only need to make it easier for users to interact with our model. Luckily _fastai_ provides! Let's upload a new cherry picture and see if our model classifies correctly.
+Apparently it's quite difficult to distinguish cherry blossom from oranges. Since classifying blossom is not exactly the point of this model we might continue to remove the offending images from the dataset. For now though I would call this model a succes! Now we only need to make it easier for users to interact with our model. Luckily _fastai_ provides! Let's upload a new cherry picture and see if our model classifies correctly.
 
 
 ```python
