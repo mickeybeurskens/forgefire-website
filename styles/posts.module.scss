@@ -16,7 +16,7 @@ $standard-margin: 0.7rem;
 
 .posts h2 {
   text-align: center;
-  width: $text-max-width;
+  max-width: $text-max-width;
   margin: auto;
   margin-bottom: $title-margin-bottom;
   margin-top: $title-margin-top;
@@ -68,6 +68,34 @@ $standard-margin: 0.7rem;
   list-style-type: circle;
 }
 
+.posts table {
+  margin: $standard-margin auto;
+}
+
+.posts th {
+  background: $c-spanish-orange; 
+  color: $c-white;
+  text-align: center;
+  font-weight: 700;
+}
+
+.posts td {
+  padding: 0.4rem 1rem;
+}
+
+.posts tr {
+  background: $c-main-1;
+}
+
+.posts tr:nth-child(even) {
+  background: $c-main-2;
+}
+
+.posts tr:hover {
+  background: $c-spanish-orange;
+  color: $c-white;
+}
+
 .posts a {
   border-radius: 4px;
   padding: 0 3px;
@@ -75,7 +103,7 @@ $standard-margin: 0.7rem;
 }
 
 .posts a:hover {
-  color: $c-yellow-orange;
+  color: $c-spanish-orange;
 }
 
 .post_hero {
@@ -97,12 +125,21 @@ $standard-margin: 0.7rem;
 .posts blockquote p {
   max-width: $element-max-width;
   border-radius: 10px;
+  font-weight: 600;
   text-align: center;
   font-style: italic;
   color: $c-white;
   background: linear-gradient(-87.43deg, $c-yellow-orange 0%,
     $c-spanish-orange 100%);;
   margin: $standard-margin auto;
+}
+
+.posts blockquote p::before {
+  content: open-quote; 
+}
+
+.posts blockquote p::after {
+  content: close-quote; 
 }
 
 .metadata {
