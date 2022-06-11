@@ -26,7 +26,7 @@ const Hero = () => {
           We <span> design, build and test AI software </span> from prototype to production for your application, and help you set up a <span>process to integrate AI</span> into your business.
         </p> 
         <p> 
-          Forge Fire applies AI in a variety of fields including <span>Machine Vision and Predictive Maintenance</span>. We're always open for a challenge, applying AI to <span>your specific use case</span>.
+          Forge Fire applies AI in a variety of fields including <span>Machine Vision and Predictive Maintenance</span>. We&apos;re always open to a challenge, applying AI to <span>your specific use case</span>.
           Browse some of our <span>projects</span> to see what Forge Fire does!
         </p>
       </div>
