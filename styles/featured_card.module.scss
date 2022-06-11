@@ -27,6 +27,11 @@
   height: 100%;
 }
 
+.card img {
+  object-fit: cover;
+  margin: auto;
+}
+
 .title {
   color: $c-white;
   font-family: $font-body;
