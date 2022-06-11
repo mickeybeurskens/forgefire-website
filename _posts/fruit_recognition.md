@@ -160,13 +160,14 @@ learner.fine_tune(4)
   <tbody>
     <tr>
       <td>0</td>
-      <td>2.039326</td>
-      <td>0.629544</td>
-      <td>0.250000</td>
-      <td>00:05</td>
+      <td>1.779194</td>
+      <td>0.692922</td>
+      <td>0.216667</td>
+      <td>00:06</td>
     </tr>
   </tbody>
 </table>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: left;">
@@ -180,34 +181,35 @@ learner.fine_tune(4)
   <tbody>
     <tr>
       <td>0</td>
-      <td>0.759739</td>
-      <td>0.407780</td>
-      <td>0.166667</td>
+      <td>0.918271</td>
+      <td>0.394905</td>
+      <td>0.133333</td>
       <td>00:05</td>
     </tr>
     <tr>
       <td>1</td>
-      <td>0.613027</td>
-      <td>0.162187</td>
-      <td>0.066667</td>
-      <td>00:04</td>
+      <td>0.632222</td>
+      <td>0.191317</td>
+      <td>0.083333</td>
+      <td>00:05</td>
     </tr>
     <tr>
       <td>2</td>
-      <td>0.459849</td>
-      <td>0.082673</td>
-      <td>0.033333</td>
-      <td>00:04</td>
+      <td>0.494863</td>
+      <td>0.122231</td>
+      <td>0.066667</td>
+      <td>00:05</td>
     </tr>
     <tr>
       <td>3</td>
-      <td>0.375923</td>
-      <td>0.056263</td>
-      <td>0.000000</td>
-      <td>00:04</td>
+      <td>0.392467</td>
+      <td>0.101128</td>
+      <td>0.033333</td>
+      <td>00:05</td>
     </tr>
   </tbody>
 </table>
+
 
 ```python
 interp = ClassificationInterpretation.from_learner(learner)
