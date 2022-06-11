@@ -31,10 +31,9 @@
   margin: auto;
   max-width: 600px;
   max-height: 600px;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  width: 80vw;
 }
 
 .posts li {
@@ -73,6 +72,15 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.posts pre {
+  border: 1px solid $c-raisin-black;
+  border-radius: 5px;
+  background: $c-cultured;
+  max-width: 40rem;
+  margin: 0.5rem auto;
+  padding: 0.3rem;
 }
 
 .metadata {
