@@ -2,8 +2,9 @@ import React from 'react'
 import { getAllPosts, getPostBySlug } from '../../lib/post'
 import Contact from '../../components/Contact'
 import Divider from '../../components/Divider'
-import ReactMarkdown from 'react-markdown'
 import styles from '../../styles/posts.module.scss'
+import ReactMarkdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
 
 const PostHero = ({img_path}) => {
   return (
@@ -20,7 +21,7 @@ const Post = ({post}) => {
         <p className={styles.metadata}>Written by {post.author} on {post.date} </p>
       </div>
       <div className={styles.posts}>
-        <ReactMarkdown>{post.content}</ReactMarkdown>
+        <ReactMarkdown rehypePlugins={[rehypeRaw]}>{post.content}</ReactMarkdown>
       </div>
       <Divider/>
       <Contact/>
