@@ -1,35 +1,46 @@
 @import "default_style";
 
+$post-max-width: 60rem;
+$text-max-width: 45rem;
+$element-max-width: 40rem;
+$title-margin-bottom: 2rem;
+$title-margin-top: 2rem;
+$standard-margin: 0.7rem;
+
 .posts h1 {
   text-align: center;
-  margin-bottom: 2rem;
+  max-width: $text-max-width;
+  margin: auto;
+  margin-bottom: $title-margin-bottom;
 }
 
 .posts h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  width: $text-max-width;
+  margin: auto;
+  margin-bottom: $title-margin-bottom;
+  margin-top: $title-margin-top;
 }
 
 .posts {
   margin: auto;
-  max-width: 60rem;
+  max-width: $post-max-width;
   padding: 0 2rem;
 }
 
 .posts p {
   text-align: justify;
-  margin: auto;
+  margin: $standard-margin auto;
   font-size: 1.2rem;
   font-weight: 400;
-  max-width: 45rem;
-  margin-bottom: 1rem;
+  max-width: $text-max-width;
   line-height: 2.1rem;
 }
 
 .posts img {
   display: block;
   margin: auto;
-  max-width: 600px;
+  max-width: $element-max-width;
   max-height: 600px;
   border-radius: 10px;
   margin-top: 3rem;
@@ -49,7 +60,7 @@
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  max-width: 40rem;
+  max-width: $element-max-width;
   background-color: $c-main-2;
   background: linear-gradient(-87.43deg, $c-yellow-orange 0%,
     $c-spanish-orange 100%);
@@ -78,9 +89,20 @@
   border: 1px solid $c-raisin-black;
   border-radius: 5px;
   background: $c-cultured;
-  max-width: 40rem;
-  margin: 0.5rem auto;
+  max-width: $element-max-width;
+  margin: $standard-margin auto;
   padding: 0.3rem;
+}
+
+.posts blockquote p {
+  max-width: $element-max-width;
+  border-radius: 10px;
+  text-align: center;
+  font-style: italic;
+  color: $c-white;
+  background: linear-gradient(-87.43deg, $c-yellow-orange 0%,
+    $c-spanish-orange 100%);;
+  margin: $standard-margin auto;
 }
 
 .metadata {
