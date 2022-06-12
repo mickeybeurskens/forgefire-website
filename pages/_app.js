@@ -8,9 +8,11 @@ import configs from '../lib/configs'
 const App = ({Component, pageProps}) => {
   return <>
     <Head>
-      <title>Forge Fire</title>
+      <title>Forge Fire Artificial Intelligence Engineering</title>
       <meta name="author" content={configs.author}/>
       <meta name="description" content={configs.site_description}/>
+      <meta name="keywords" content="Artificial Intelligence, Forge Fire, Consultancy, 
+        Vision, Robotics, Machine Learning, Software, Data Science"/>
     </Head>
     <Header/>
     <Component {...pageProps} />
