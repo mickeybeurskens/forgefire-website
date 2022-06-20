@@ -28,7 +28,7 @@ Since I recently completed a massive open online course (MOOC) on [full stack de
 
 ## Design
 
-A good design needs a starting point, and for this website the starting point is *color*. From that point onward the design was first laid out in [Figma](), before coding it up. Design by itself is already hard enough as it is, so splitting the build into a separate process later increased the efficiency of the process. The design ended up (after some iterations) looking like this:
+A good design needs a starting point, and for this website the starting point is *color*. From that point onward the design was first laid out in [Figma](https://figma.com), before coding it up. Design by itself is already hard enough as it is, so splitting the build into a separate process later increased the efficiency of the process. The design ended up (after some iterations) looking like this:
 
 ![ff_website](/images/projects/card/ff_website.png)
 
