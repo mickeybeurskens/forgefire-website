@@ -1,5 +1,5 @@
 ---
-title: "Over Engineered: Fruit Recognition Using FastAI!"
+title: "Over Engineered: Fruit Recognition Using FastAI"
 author: Mickey Beurskens
 date: "2022-06-07"
 summary: "Have you ever wondered what that piece of fruit is that you encountered during your walk through the woods?"
