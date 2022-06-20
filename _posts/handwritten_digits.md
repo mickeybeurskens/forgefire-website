@@ -315,7 +315,7 @@ mnist_loss(prds, test_labels), batch_accuracy(prds, test_labels)
 
 
 
-Yep, that work. Now to train the model!
+Yep, that worked. Now to train the model!
 
 
 ```python
